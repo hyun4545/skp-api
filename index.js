@@ -1,6 +1,10 @@
 const express = require('express');
 const axios=require('axios');
+const cors = require('cors');
+
 const app = express();
+// Use CORS middleware
+app.use(cors());
 
 app.get('/getAllStock', (req, res) => {
   axios.get("https://openapi.twse.com.tw/v1/exchangeReport/TWTB4U")
