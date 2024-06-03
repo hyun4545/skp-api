@@ -27,4 +27,4 @@ app.get('/bye', (req, res) => {
   res.send('bye!')
 })
 
-app.listen('/api')
+app.listen(3000)
